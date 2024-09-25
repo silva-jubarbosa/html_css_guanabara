@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas em CSS</title>
+    <style>
+        @font-face {
+            font-family: 'party';
+            src: url('fonts/Stitch Party.ttf') format('truetype');
+        }
+        /*Tive de colocar 'fonts/Stich Party.ttf porque o arquivo da font está nessa pasta separada.*/
+        
+        @font-face {
+            font-family: 'pink';
+            src: url('fonts/Pink\ Misty.ttf') format(truetype);
+        }
+
+        @font-face {
+            font-family: 'christmas';
+            src: url('fonts/Home\ Christmas.otf') format('opentype');
+        }
+        
+        h1{
+            font-family: party, sans-serif;
+            font-size: 3em;
+            font-weight: lighter;
+
+        }
+
+        h2{
+            font-family: christmas, sans-serif;
+            font-size: 4em;
+            font-weight: lighter;
+        }
+        
+        p{
+            font-family: pink, sans-serif;
+            font-size: 5em;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Usando Fontes Externas</h1>
+    <p>É um rolê bem engraçado usar fotnes externas. Faça abaixo um outro parágrafo com outra fonte só para praticar mais.</p>
+
+    <h2>Então é Natal, e o que você fez?</h2>
+
+    <a href="exercicio_fonte_01.html" target="_self" rel="prev">
+        <p>Clique aqui para voltar</p>
+    </a>
+
+    <h2>Vamos aprender agora sobre id</h2>
+    <a href="aprendendo_sobre_id.html" target="_self" rel="next">
+        <p>Vá para a terceira página onde iremos trabalhar com isso.</p>
+    </a>
+</body>
+</html>

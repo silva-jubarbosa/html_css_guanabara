@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(255, 211, 218);
+}
+
+h1{
+    color: rgb(253, 0, 42);
+}
+
+h1#principal{
+    color: rgb(132, 0, 255);
+    text-align: center;
+    background-color: white;
+}
+
+h2{
+    color: rgb(106, 41, 52);
+}
+
+.basico{
+    color: red;
+    font-weight: lighter;
+}
+
+.intermediario{
+    color: rgb(0, 119, 255);
+}
+
+.avancado{
+    color: green;
+}
+
+.italizado{
+    font-style: italic;
+    color: rgb(48, 219, 219);
+    /*Veja que o seu h1 está com essa class italizado, mas não pegou a cor que você colocou aqui porque ele já tem um id indicando a cor, então a informação do id irá se sobrepor.*/
+}
+
+.gigante{
+    font-size: 7em;
+}

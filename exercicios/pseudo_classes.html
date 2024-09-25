@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        @font-face{
+            font-family: 'party';
+            src: url('fonts/Stitch\ Party.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'pink';
+            src: url('fonts/Pink\ Misty.ttf') format('truetype');
+        }
+
+        div{
+            display: inline-block;
+            background-color: grey;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: aquamarine;
+        }
+
+        .truques{
+            font-family: 'party', sans-serif;
+            font-weight: normal;
+            font-size: 2em;
+        }
+
+        .maravilha{
+            font-family: 'pink', sans-serif;
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <p class="truques">Agora veja uns truques legais usando hover:</p>
+    <p class="maravilha">Prepare-se para ficar maravilhada haha</p>
+    <a href="exemplos_hover.html" target="_self" rel="next">
+        <p>Mas, para isso, vá para a próxima página</p>
+    </a>
+
+</body>
+</html>

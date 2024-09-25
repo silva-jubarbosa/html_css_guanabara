@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Esta é a segunda página do meu site de treinos</h1>
+    <p>Esta página serve para treinarmos a navegação entre páginas.</p>
+    <p>Clique aqui para voltar a <a href="index.html" target="_self" rel="prev">página inicial</a></p>
+    <br>
+    <p>Sabe que, quando voltar de greve, você precisará fazer o que se pede lá no <a href="https://nead.ifb.edu.br/" target="_blank" rel="nofollow">NEAD</a>.</p>
+    
+    <h1>Imagens Dinâmicas</h1>
+    <p>A partir daqui teremos imagens que vão aumentar ou diminuir a partir do tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens_dinamicas/img_p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens_dinamicas/img_m.png" type="image/png">
+        <img src="imagens_dinamicas/img_g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Vamos reproduzir áudios</h1>
+    <audio preload="metadata" src="midia/little_song.mp3" controls autoplay loop></audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast_33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast_33.ogg" type="audio/ogg">
+        <source src="midia/guanacast_33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast_33.mp3">Clique aqui</a> para baixar o arquivo MP3.</p>
+    </audio>
+
+    <h1>Vamos hospedar vídeos localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="560" height="315" poster="video/thumbnail.png" controls>
+        <source src="video/puppy_box.mp4" type="video/mp4">
+        <source src="video/puppy_box.m4v" type="video/mp4">
+        <source src="video/puppy_box.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Incorporando vídeos do YouTube e Vimeo</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/34GJeemh0Gk?si=z2RNP3yzUig5Qt5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Ao incorporar vídeos do YouTube ou do Vimeo, por exemplo, o consumo de banda é de responsabilidade deles e não do seu cliente que quer deixar o site no ar. Por isso é mais recomendado incorporar vídeos e não hospedá-los localmente.-->
+
+    <iframe src="https://player.vimeo.com/video/216259411?h=c587f399da&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>
