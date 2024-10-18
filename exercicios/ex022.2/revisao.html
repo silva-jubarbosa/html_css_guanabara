@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Revisão</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+            background-image: url('imagens_ex022.2/wallpaper004.jpg');
+            background-size: auto;
+            background-attachment: fixed;
+        }
+
+        h1{
+            background-image: linear-gradient(to right, darkgray, lightgray, transparent);
+        }
+
+        h2{
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.325);
+        }
+
+        .div1{
+            background-color: black;
+            border: 10px solid darkblue;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+
+        #div1q1{
+            background-image: url('imagens_ex022.2/pattern001.png');
+        }
+
+        #div1q2{
+            background-image: url('imagens_ex022.2/pattern002.png');
+        }
+
+        #div1q3{
+            background-image: url('imagens_ex022.2/pattern003.png');
+        }
+
+        .div2{
+            background-color: rgb(174, 130, 130);
+            border: 10px solid darkblue;
+            border-radius: 10px;
+            height: 600px;
+            width: 600px;
+            display: inline-block;
+        }
+
+        .div2 > p{
+            background-color: white;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #div2q1{
+            background-image: url('imagens_ex022.2/mascote.png');
+            background-position: center right;
+            background-size: 100px 100px;
+        }
+
+        #div2q2{
+            background-image: url('imagens_ex022.2/mascote.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+        }
+
+        #div2q3{
+            background-image: url('imagens_ex022.2/mascote.png');
+            background-position: center center;
+            background-repeat: repeat-x;
+            background-size: 100px 100px;
+        }
+
+        #div2q4{
+            background-image: url('imagens_ex022.2/mascote.png');
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: 100px 100px;
+        }
+
+        .div3{
+            background-color: rgb(174, 211, 224);
+            border: 10px solid darkblue;
+            border-radius: 10px;
+            height: 600px;
+            width: 600px;
+            display: inline-block;
+        }
+
+        .div3 > p{
+            background-color: transparent;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            color: lightcoral;
+        }
+
+        #div3q1{
+            background-image: url('imagens_ex022.2/wallpaper003.jpg');
+            background-position: left top;
+        }
+
+        #div3q2{
+            background-image: url('imagens_ex022.2/wallpaper003.jpg');
+            background-position: left bottom;
+        }
+
+        #div3q3{
+            background-image: url('imagens_ex022.2/wallpaper003.jpg');
+            background-position: center center;
+        }
+
+        #div3q4{
+            background-image: url('imagens_ex022.2/wallpaper003.jpg');
+            background-position: right top;
+        }
+
+        #div3q5{
+            background-image: url('imagens_ex022.2/wallpaper003.jpg');
+            background-position: right bottom;
+        }
+
+        #container{
+            background-image: url('imagens_ex022.2/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(255, 123, 0);
+        }
+
+        #mascotinho{
+            background-image: url('imagens_ex022.2/mascote.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Vamos revisar!</h1>
+    <p>Este é um exercício de revisão sobre o estudo de backgrounds.</p>
+
+    <h2>Atividade 1: Background em div</h2>
+    <div class="div1" id="div1q1"></div>
+    <div class="div1" id="div1q2"></div>
+    <div class="div1" id="div1q3"></div>
+
+    <h2>Atividade 2: Repetição do background-image</h2>
+    <div class="div2" id="div2q1"> <p>Repeat</p></div>
+    <div class="div2" id="div2q2"><p>No-repeat</p></div>
+    <div class="div2" id="div2q3"><p>Repeat-x</p></div>
+    <div class="div2" id="div2q4"><p>Repeat-y</p></div>
+
+    <h2>Atividade 3: Pedacinhos da imagem</h2>
+    <div class="div3" id="div3q1"><p>Aqui temos uma imagem que mostra o left top</p></div>
+    <div class="div3" id="div3q2"><p>Aqui temos uma imagem que mostra o left bottom</p></div>
+    <div class="div3" id="div3q3"><p>Aqui temos uma imagem que mostra o center center</p></div>
+    <div class="div3" id="div3q4"><p>Aqui temos uma imagem que mostra o right top</p></div>
+    <div class="div3" id="div3q5"><p>Aqui temos uma imagem que mostra o right bottom</p></div>
+
+    <h2>Atividade 4: Mascote alinhado ao centro</h2>
+    <section id="container">
+        <article id="mascotinho"></article>
+    </section>
+
+
+</body>
+</html>
