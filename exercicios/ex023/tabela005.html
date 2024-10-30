@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar Colgroup em HTML5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .col-nome, .col-idade {
+            background-color: lightblue;
+        }
+
+        .col-sexo {
+            background-color: rgb(205, 230, 238);
+        }
+
+        .col-profissao {
+            background-color: lightcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="col-nome">
+            <col class="col-sexo">
+            <col class="col-idade">
+            <col class="col-profissao" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+            <th>Objetivo</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Pós-graduação</td>
+        </tr>
+        <tr>
+            <td>Murilo Esteves</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Empresário</td>
+            <td>MBA</td>
+        </tr>
+        <tr>
+            <td>Marcelo Fernandes</td>
+            <td>M</td>
+            <td>21</td>
+            <td>DJ</td>
+            <td>Curso Técnico</td>
+        </tr>
+        <tr>
+            <td>Gustavo Henrique</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Carpinteiro</td>
+            <td>Curso Técnico</td>
+        </tr>
+        <tr>
+            <td>Ludmila Castro</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Estudante</td>
+            <td>Graduação</td>
+        </tr>
+        <tr>
+            <td>Maria Fernanda</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Secretária</td>
+            <td>Curso Técnico</td>
+        </tr>
+    </table>
+</body>
+</html>
